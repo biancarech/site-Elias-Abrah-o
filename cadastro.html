@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro | Colégio Elias Abrahão</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="lado-esquerdo">
+
+            <div class="logo">
+                <h1>Colégio<br>Elias Abrahão</h1>
+                <p>Cívico-Militar</p>
+            </div>
+
+            <div class="mensagem">
+
+                <h2>Crie sua conta!</h2>
+
+                <p>
+                    Faça seu cadastro para ter acesso
+                    ao sistema do colégio.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="lado-direito">
+
+            <div class="formulario cadastro-form">
+
+                <h2>Criar conta</h2>
+
+                <p class="subtitulo">
+                    Preencha seus dados abaixo
+                </p>
+
+
+                <form>
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+
+                    <label for="tipo">
+                        Você é:
+                    </label>
+
+                    <select id="tipo" required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="aluno">
+                            Aluno(a)
+                        </option>
+
+                        <option value="professor">
+                            Professor(a)
+                        </option>
+
+                        <option value="funcionario">
+                            Funcionário(a)
+                        </option>
+
+                    </select>
+
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Crie uma senha"
+                        required
+                    >
+
+
+                    <label for="confirmar">
+                        Confirmar senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmar"
+                        placeholder="Digite a senha novamente"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Criar conta
+                    </button>
+
+                </form>
+
+
+                <p class="cadastro">
+
+                    Já possui uma conta?
+
+                    <a href="login.html">
+                        Entrar
+                    </a>
+
+                </p>
+
+
+                <a href="index.html" class="voltar">
+                    ← Voltar para o site
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
