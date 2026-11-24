@@ -1,168 +1,96 @@
+
+1 de 10.271
+(sem assunto)
+Caixa de entrada
+
+ANA CLARA VUSTRO SANTOS
+Anexos
+11:06 (há 3 minutos)
+para mim
+
+
+ 2 anexos
+  •  Verificados pelo Gmail
+index.html
+100%
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Colégio Elias Abrahão</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Cadastros</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <main class="container">
+    <header class="page-header">
+      <span class="eyebrow">PAINEL ADMINISTRATIVO SCHWARTZ DEV'S</span>
+      <h1>Sistema de <span>Cadastros</span></h1>
+      <p>Gerencie clientes, consultores e projetos em um só lugar.</p>
+    </header>
 
-<header>
-    <div class="logo-area">
-        <img src="imagens/logo.png" alt="Logo do Colégio Elias Abrahão">
-        <div>
-            <h1>Colégio Elias Abrahão</h1>
-            <span>Colégio Cívico-Militar</span>
+    <section class="forms-grid" aria-label="Formulários de cadastro">
+      <article class="card">
+        <div class="card-heading">
+          <div class="icon">01</div>
+          <div><h2>Cadastro de Cliente</h2><p>Registre um novo cliente</p></div>
         </div>
-    </div>
+        <form id="clientForm">
+          <label for="clientName">Nome</label>
+          <input id="clientName" name="name" type="text" placeholder="Nome completo" required maxlength="100">
+          <label for="clientAddress">Endereço</label>
+          <input id="clientAddress" name="address" type="text" placeholder="Rua, número, cidade" required maxlength="160">
+          <button type="submit">Cadastrar cliente <span>→</span></button>
+        </form>
+      </article>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="colaboradores.html">Colaboradores</a>
-        <a href="contato.html">Contato</a>
-        <a href="login.html" class="login-btn">Login</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <div class="hero-text">
-        <span class="tag">COLÉGIO ELIAS ABRAHÃO</span>
-
-        <h2>Educação que transforma<br>
-            <strong>futuros.</strong>
-        </h2>
-
-        <p>
-            Conheça nosso colégio, nossos projetos,
-            colaboradores e tudo o que faz parte da
-            nossa comunidade escolar.
-        </p>
-
-        <div class="buttons">
-            <a href="sobre.html" class="btn">Conheça o colégio</a>
-            <a href="projetos.html" class="btn-outline">Ver projetos</a>
+      <article class="card">
+        <div class="card-heading">
+          <div class="icon">02</div>
+          <div><h2>Cadastro de Consultor</h2><p>Adicione um profissional</p></div>
         </div>
-    </div>
+        <form id="consultantForm">
+          <label for="consultantName">Nome</label>
+          <input id="consultantName" name="name" type="text" placeholder="Nome completo" required maxlength="100">
+          <label for="consultantDocument">Documento</label>
+          <input id="consultantDocument" name="document" type="text" placeholder="CPF ou outro documento" required maxlength="30">
+          <label for="consultantSpecialty">Especialização</label>
+          <input id="consultantSpecialty" name="specialty" type="text" placeholder="Área de atuação" required maxlength="100">
+          <button type="submit">Cadastrar consultor <span>→</span></button>
+        </form>
+      </article>
 
-    <div class="hero-image">
-        <img src="imagens/colegio.jpg" alt="Colégio Elias Abrahão">
-    </div>
-
-</section>
-
-<section class="cards-section">
-
-    <h2>Conheça nosso colégio</h2>
-
-    <p class="section-description">
-        Um espaço dedicado à educação, disciplina,
-        desenvolvimento e formação dos nossos estudantes.
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="icon">🏫</div>
-            <h3>Sobre</h3>
-            <p>
-                Conheça a história e as características
-                do Colégio Elias Abrahão.
-            </p>
-            <a href="sobre.html">Saiba mais →</a>
+      <article class="card">
+        <div class="card-heading">
+          <div class="icon">03</div>
+          <div><h2>Cadastro de Projeto</h2><p>Crie um novo projeto</p></div>
         </div>
+        <form id="projectForm">
+          <label for="projectStart">Data de início</label>
+          <input id="projectStart" name="start" type="date" required>
+          <label for="projectEnd">Data de término</label>
+          <input id="projectEnd" name="end" type="date" required>
+          <label for="projectValue">Valor (R$)</label>
+          <input id="projectValue" name="value" type="number" placeholder="0,00" min="0.01" step="0.01" required>
+          <button type="submit">Cadastrar projeto <span>→</span></button>
+        </form>
+      </article>
+    </section>
 
-        <div class="card">
-            <div class="icon">🚀</div>
-            <h3>Projetos</h3>
-            <p>
-                Confira projetos e atividades desenvolvidos
-                pela comunidade escolar.
-            </p>
-            <a href="projetos.html">Ver projetos →</a>
-        </div>
-
-        <div class="card">
-            <div class="icon">👥</div>
-            <h3>Colaboradores</h3>
-            <p>
-                Conheça os profissionais que fazem parte
-                da nossa escola.
-            </p>
-            <a href="colaboradores.html">Conhecer →</a>
-        </div>
-
-        <div class="card">
-            <div class="icon">📞</div>
-            <h3>Contato</h3>
-            <p>
-                Entre em contato com o Colégio Elias
-                Abrahão.
-            </p>
-            <a href="contato.html">Entrar em contato →</a>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="quote">
-
-    <div>
-        <span>EDUCAÇÃO • DISCIPLINA • FUTURO</span>
-
-        <h2>
-            "A educação abre caminhos
-            para novos futuros."
-        </h2>
-
-        <p>
-            Colégio Elias Abrahão —
-            Quatro Barras, Paraná.
-        </p>
-    </div>
-
-</section>
-
-<footer>
-
-    <div class="footer-logo">
-        <img src="imagens/logo.png" alt="Logo">
-        <div>
-            <strong>Colégio Elias Abrahão</strong>
-            <p>Colégio Cívico-Militar</p>
-        </div>
-    </div>
-
-    <div>
-        <h3>Links</h3>
-        <a href="sobre.html">Sobre</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato</a>
-    </div>
-
-    <div>
-        <h3>Acesso</h3>
-        <a href="login.html">Login</a>
-        <a href="cadastro.html">Cadastro</a>
-    </div>
-
-    <div>
-        <h3>Localização</h3>
-        <p>Quatro Barras - Paraná</p>
-    </div>
-
-</footer>
-
-<div class="copyright">
-    © 2026 Colégio Elias Abrahão. Todos os direitos reservados.
-</div>
-
+    <section class="records-section">
+      <div class="records-header">
+        <div><span class="eyebrow">DADOS SALVOS</span><h2>Registros cadastrados</h2></div>
+        <span class="record-count" id="recordCount">0 registros</span>
+      </div>
+      <div class="record-groups">
+        <section class="record-group"><h3>Clientes</h3><div id="clientsList" class="record-list"><p class="empty">Nenhum cliente cadastrado.</p></div></section>
+        <section class="record-group"><h3>Consultores</h3><div id="consultantsList" class="record-list"><p class="empty">Nenhum consultor cadastrado.</p></div></section>
+        <section class="record-group"><h3>Projetos</h3><div id="projectsList" class="record-list"><p class="empty">Nenhum projeto cadastrado.</p></div></section>
+      </div>
+    </section>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <footer> Sistema de Cadastros <span>•</span> Dados armazenados neste navegador</footer>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
